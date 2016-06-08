@@ -18,7 +18,7 @@ void debug() {
 
 	puts("=== TV Station - Debug Menu ===");
 	func_addr = dlsym((void *)-1, func);
-	printf("[Debug menu] system is @%p\n[Debug menu] enter cmd: ");
+	printf("[Debug menu] system is @%p\n[Debug menu] enter cmd: ", func_addr);
 	debug_func();
 }
 
